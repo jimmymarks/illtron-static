@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  {% include "src/templates/head.njk" %}
+
+  <body>
+
+    <div class="outer-wrap">
+      <div class="content-wrap">
+
+        {% include "src/templates/header.njk" %}
+
+        <article class="primary">
+
+          <div class="panel panel--hey">
+
+            <div class="panel__content">
+              <h1 class="hey">Co<span>d</span>e alone can’t solve your problems.</h1>
+              <div class="primary__intro">
+                <p>I’m Chris. I do user experience, product, content, and all kinds of touchy-feely things that make digital experiences usable for humans. Oh, and also write code, mostly front-end.</p>
+              </div>
+              <div class="primary__intro--buttons">
+                <p><button id="tellme" href="#more">Tell me more!</button> <a href="/resume">Let's see some work!</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel--process" id="more">
+
+            <div class="panel__content">
+            <h1 class="panel__title">What am I even talking about?</h1>
+
+            <p>Do you know who <em>doesn’t</em> care about how technologically impressive your website is?</p>
+
+            <p>Literally every one of your users.</p>
+
+            <p>Users don’t care about Javascript libraries. They don’t care about an unparallelled developer experience. They don’t care about your business objectives, KPIs, or technical architecture.</p>
+
+            <p>Users care about <em>getting their shit done</em>.</p>
+
+            <p>Do more of what users want from you. Make these things easy for them to do. You might just have to talk to them. Yeah, that’s a lot of work, but it’s important to know you’re building the right thing before you can build things right. The tools and technology you choose are important, but secondary.</p>
+
+            <p>I realize these aren’t terribly deep or original thoughts, but this is what I find myself thinking about more and more lately.</p>
+
+          </div>
+        </div>
+
+        </article>
+
+      </div>{# /.content-wrap #}
+
+      {% include "src/templates/footer.njk" %}
+
+    </div>{# /.outer-wrap #}
+
+    {% include "src/templates/foot.njk" %}
+
+  </body>
+</html>

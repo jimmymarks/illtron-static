@@ -1,0 +1,63 @@
+$phone-upper-boundary: 600px;
+$tablet-portrait-upper-boundary: 900px;
+$tablet-landscape-upper-boundary: 1200px;
+$desktop-upper-boundary: 1800px;
+
+$min-width: 320px;
+$max-width: 1280px;
+$min-font: 16px;
+$max-font: 22px;
+
+$font-body:     Raleway, sans-serif;
+$font-headline: Shrikhand, sans-serif;
+$font-serif:    Georgia, serif;
+
+$gray-5:     lighten(black, 95);
+$gray-10:    lighten(black, 90);
+$gray-20:    lighten(black, 80);
+$gray-30:    lighten(black, 70);
+$gray-40:    lighten(black, 60);
+$gray-50:    lighten(black, 50);
+$gray-60:    lighten(black, 40);
+$gray-70:    lighten(black, 30);
+$gray-80:    lighten(black, 20);
+$gray-85:    lighten(black, 15);
+$gray-90:    lighten(black, 10);
+$black:      #000;
+$white:      #fff;
+
+$border-hairline: 1px solid $gray-20;
+$border-medium: 2px solid $gray-20;
+$border-heavy: 5px solid $gray-70;
+
+$space: 15px;
+$space-double: 30px;
+$space-quad: 60px;
+
+
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before  {
+  box-sizing: border-box;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.debug {
+  @include debug;
+}

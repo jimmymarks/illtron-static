@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+  {% include "src/templates/head.njk" %}
+
+  <body>
+
+    <div class="outer-wrap">
+      <div class="content-wrap">
+
+        {# {% include "src/templates/header.njk" %} #}
+
+        <article class="primary">
+
+          <div class="panel resume">
+              <div class="panel__content">
+
+
+                <h1 class="headline">{{ file.frontMatter.headline | safe }}</h1>
+                {{ contents | safe }}
+            </div>
+          </div>
+        </article>
+
+      </div>{# /.content-wrap #}
+
+      {% include "src/templates/footer.njk" %}
+
+    </div>{# /.outer-wrap #}
+
+    {% include "src/templates/foot.njk" %}
+
+  </body>
+</html>

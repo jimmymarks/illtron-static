@@ -1,0 +1,24 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>{{ file.frontMatter.title }}</title>
+
+  <meta name="description" content="{{ file.frontMatter.metadesc }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preload" href="/css/style.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="//fonts.googleapis.com/css?family=Raleway:400,900|Shrikhand" as="style" onload="this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="path/to/mystylesheet.css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,900|Shrikhand" rel="stylesheet">
+  </noscript>
+
+  <script>
+    {% include "node_modules/fg-loadcss/src/cssrelpreload.js" %}
+  </script>
+
+
+</head>

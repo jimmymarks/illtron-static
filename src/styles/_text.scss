@@ -1,0 +1,11 @@
+.headline {
+  font-weight: normal;
+  @include ffo-swap($font-headline);
+  @include fluid-type($min-width, $max-width, 24px, 72px);
+  line-height: 1;
+}
+
+body {
+  @include ffo-swap($font-body);
+  line-height: 1.4;
+}

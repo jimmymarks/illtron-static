@@ -1,0 +1,198 @@
+/// Debug - makes elements more visible for debugging purposes
+/// @author Chris Coleman
+/// @access public
+/// @param {string} $color - Customize the color, default is fuchsia
+/// @example
+///   .parent {
+///     @include debug(color);
+///   }
+@mixin debug($color: fuchsia) {
+  outline: 1px solid transparentize($color, .5);
+  background: transparentize($color, .9);
+}
+
+/// Strip Units
+/// @author Chris Coleman
+/// @access public
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+/// FontFaceObserver swap
+/// @author Chris Coleman
+/// @access public
+/// @param {string} $font - A font name to load once the selector is present
+/// @param {string} $selector - The specified font will be applied when this selector is present
+/// @example
+///   .parent {
+///     @include ffo-swap('Roboto')
+///   }
+@mixin ffo-swap($font, $selector: '.fonts-loaded') {
+  #{$selector} &  {
+    font-family: $font;
+  }
+}
+
+
+/// IE11 Helper
+/// @author Chris Coleman
+/// @access public
+/// @example
+/// @include ie11 {
+///   // Target IE 11 with styles here
+/// }
+@mixin ie11 {
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+
+/// Grid support helper - just a little less to type. Excludes IE/Edge's bad implementation
+/// @author Chris Coleman
+/// @access public
+/// @example
+///   @include gridsupport {
+///     // Styles for browsers with grid support go here
+///   }
+@mixin gridsupport {
+  @supports (display: grid) and (not (display: -ms-grid)) {
+    @content;
+  }
+}
+
+
+/// Grid support fallback - for browsers that don't support CSS Grid
+/// @author Chris Coleman
+/// @access public
+/// @example
+///   @include nogrid {
+///     // Styles for browsers with no grid support go here
+///   }
+@mixin nogrid {
+  @supports (not (display: grid)) and (display: -ms-grid) {
+    @content;
+  }
+}
+
+/// Strip Units
+/// @author Chris Coleman
+/// @access public
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+/// Fluid Type
+/// @author Chris Coyier
+/// @link https://css-tricks.com/snippets/css/fluid-typography/
+/// @link https://codepen.io/chriscoyier/pen/pPRGLP
+/// @access public
+/// @example
+/// .parent {
+///   @include fluid-type(320px, 1280px, 14px, 21px);
+/// }
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+/// Media Queries
+/// @author David Gilbertson
+/// @link https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+/// @access public
+/// @example
+///   @include media(range) {
+///     @content;
+///   }
+@mixin media($range) {
+
+  $phone-upper-boundary: 736px;
+  $bigger-phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1100px;
+  $desktop-upper-boundary: 1280px;
+  $big-desktop-upper-boundary: 1440px;
+
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  }
+
+  @else if $range == bigger-phones-up {
+    @media (min-width: $bigger-phone-upper-boundary) {
+      @content;
+    }
+  }
+
+  @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) {
+      @content;
+    }
+  }
+
+  @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) {
+      @content;
+    }
+  }
+
+  @else if $range == desktop-up {
+    @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+
+  @else if $range == big-desktop-up {
+    @media (min-width: $big-desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
+
+
+/// Module Spacing - Add to parent elements to remove space at bottom of last child.
+/// @author Chris Coleman
+/// @access public
+/// @example
+///   @include module-spacing;
+@mixin module-spacing {
+  & > *:last-child:after {
+   content: ' ';
+   margin: 1em 0 -1em;
+   padding: 0;
+   display: block;
+   height: 0;
+ }
+}
+
+
+
+/// Clearfix
+/// @author Chris Coleman
+/// @access public
+/// @example
+///   @include clearfix;
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
