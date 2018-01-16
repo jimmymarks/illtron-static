@@ -39,6 +39,7 @@ const files = {
   },
   "dist": {
     "zipped" : 'compiled',
+    "ghpages" : 'docs',
     "html": 'dist',
     "styles": 'dist/css',
     "images": 'dist/img',
@@ -78,6 +79,7 @@ gulp.task('gzip', ['images', 'styles', 'js', 'favicons', 'render-pages', 'clean'
     .pipe(gulp.dest(files.dist.zipped))
     .pipe(gzip())
     .pipe(gulp.dest(files.dist.zipped))
+    .pipe(gulp.dest(files.dist.ghpages))
 });
 
 

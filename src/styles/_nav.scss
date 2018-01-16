@@ -28,6 +28,7 @@
     color: $linked;
     &:hover {
       color: $highlight;
+      border-bottom: 4px solid $linked;
     }
   }
 }

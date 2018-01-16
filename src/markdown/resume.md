@@ -12,17 +12,17 @@ Dedicated defender of the user with proven know-how to combine research, technol
 
 ### Professional Experience
 
-#### Technical Manager
+#### Tech Manager
 
 ##### *Science* Magazine (American Association for the Advancement of Science)
 ##### Washington, DC
 ##### Aug. 2015–Present
 
-Led the modernization and re-platforming of the company's flagship websites, resulting in a 30% year-over-year increase in site traffic and user engagement. This family of sites now serves nearly a quarter-billion page views per year.
+Led the modernization and re-platforming of the company’s flagship websites, resulting in a 30% year-over-year increase in traffic and user engagement. Fostered a new data-driven approach to solving customer needs, rather than stakeholder-driven. This family of sites now serves nearly a quarter-billion page views per year and growing.
 
-Coordinated cross-functional stakeholders from C-suite to system engineers. Supervised and mentored a staff of four, responsible for user experience, information architecture, content, back-end, and front-end development. Facilitated each phase of the software development life cycle (SDLC). My efforts helped *Science* magazine extend its award-winning visual aesthetic to its web properties as part of a digital transformation initiative.
+Coordinated cross-functional stakeholders from senior management to design and engineering. Supervised and mentored a staff of four, responsible for user experience, information architecture, content, back-end, and front-end development. Facilitated each phase of the product life cycle, from research to release. My efforts helped *Science* magazine extend its award-winning print experience to web properties as part of a five-year digital transformation.
 
-My responsibilities include shared oversight of the department budget of approximately $250,000, exclusive of staff. When in need of outside expertise, I select vendors for additional content, design, web, and infrastructure projects and coordinate with closely with the project and portfolio team to ensure work is delivered on time and within budget.
+My responsibilities include shared oversight of the department budget of approximately $250,000, exclusive of staff. I lead vendor selection for additional content, design, web, and infrastructure projects, and coordinate with closely with the project and portfolio team to ensure work is delivered on time and within budget.
 
 #### Senior Developer
 
@@ -30,7 +30,7 @@ My responsibilities include shared oversight of the department budget of approxi
 ##### Washington, DC
 ##### Feb. 2013–Aug. 2015
 
-Using Atomic Design principles, established a living style guide and design system serving *Science*'s journal and magazine properties. This successful effort has led to culture of product and design not only within the company, but also among the company's mission-critical partners and vendors.
+Using Atomic Design principles, established a living style guide and design system serving *Science*’s journal and magazine properties. This successful effort has led to culture of product and design not only within the company, but also among the company’s mission-critical partners and vendors.
 
 Shepherded an initiative to establish a user-first design culture, borrowing from both Lean and Design Thinking models, for iterating consumer products and technology, relying on both data and empathy for the customer to drive decisions. Led development, including Javascript, Sass/CSS, Node.js, PHP, Drupal, WordPress, and Pattern Lab.
 
@@ -56,7 +56,7 @@ Designed and developed user experience prototypes for enterprise clients includi
 ##### Washington, DC
 ##### Oct. 2011–Dec. 2012  
 
-Front-end development in a performance-focused, agile startup. Worked within a cross-functional team to build web and iOS products. Contributed to LivingSocial's consumer-facing user interface library. Worked closely with designers on the company's Live Events vertical and other consumer-facing areas and mobile web, email marketing, and iOS/Android app interfaces. Researched and implemented best practices for modern HTML email templates, resulting in improved experience across a wider variety of email clients.
+Front-end development in a performance-focused, agile startup. Worked within a cross-functional team to build web and iOS products. Contributed to LivingSocial’s consumer-facing user interface library. Worked closely with designers on the company’s Live Events vertical and other consumer-facing areas and mobile web, email marketing, and iOS/Android app interfaces. Researched and implemented best practices for modern HTML email templates, resulting in improved experience across a wider variety of email clients.
 
 #### Web Developer
 

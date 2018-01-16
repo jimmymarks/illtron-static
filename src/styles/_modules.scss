@@ -36,7 +36,8 @@
 }
 
 .panel--process {
-  background: $darkness;
+  // background: $darkness;
+  background: linear-gradient(90deg, #EB9532 0,#ff624d);
   color: white;;
   position: relative;
   padding: 2rem;
@@ -87,7 +88,9 @@
     color: $linked;
 
     &:hover {
-      color: $highlight;
+      color: $white;
+      border-color: $gray-20;
+      background: linear-gradient(90deg, #EB9532 0,#ff624d);
     }
 
     @include media(tablet-portrait-up) {
