@@ -1,13 +1,13 @@
-let fontTimeOut = 2000;
-
-let fontShrikhand = new FontFaceObserver("Shrikhand");
-
-let fontRaleway = new FontFaceObserver("Raleway");
-
-let fontRalewayBlack = new FontFaceObserver("Raleway", {
+// Set up Font Face Observer fonts
+const fontTimeOut = 2000;
+const fontShrikhand = new FontFaceObserver("Shrikhand");
+const fontRaleway = new FontFaceObserver("Raleway");
+const fontRalewayBlack = new FontFaceObserver("Raleway", {
   "weight": "900"
 });
 
+
+// Get those fonts
 Promise.all ([
   fontShrikhand.load(null, fontTimeOut),
   fontRaleway.load(null, fontTimeOut),
@@ -16,24 +16,30 @@ Promise.all ([
   document.documentElement.className += " fonts-loaded";
 });
 
+
+// Keep the footer updated without needing a server
 const year = new Date().getFullYear();
 document.getElementById("year").innerText = year;
 
-document.querySelector('.panel--process').scrollIntoView({
-  behavior: 'smooth'
-});
 
+// Smooth scrolling on internal links
+function smoothScroll() {
+  const internalLinks = document.querySelectorAll('a[href^="#"]');
 
+  internalLinks.forEach(
+    function(currentLink) {
 
+      const linkHref = currentLink.getAttribute('href');
 
-function scrollTo(clickOn, thenScrollTo) {
-  document.querySelector(clickOn).addEventListener("click", function( event ) {
-    document.querySelector(thenScrollTo).scrollIntoView({
-      behavior: 'smooth'
-    });
-    event.preventDefault;
-  }, false);
+      currentLink.addEventListener("click", function(event) {
+        document.querySelector(linkHref).scrollIntoView({
+          behavior: 'smooth'
+        });
+        event.preventDefault();
+      }, false);
+    }
+  );
 }
 
 
-scrollTo("#tellme", "#more");
+smoothScroll();

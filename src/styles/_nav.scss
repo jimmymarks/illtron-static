@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(white, .9);
+  @include fluid-type($min-width, $max-width, 12px, 22px);
+
+  font-weight: bold;
+
+  ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 1280px;
+  }
+
+  li {
+    padding: 1em .5em 1em 0;
+
+    &:not(:first-child) {
+      padding: 1em .5em;
+    }
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $linked;
+    &:hover {
+      color: $highlight;
+    }
+  }
+}

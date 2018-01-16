@@ -205,13 +205,13 @@ gulp.task('styles', () => {
     .pipe(sourcemaps.write('.'))
     .pipe(size({showFiles: true}))
     .pipe(gulp.dest(files.dist.styles))
+    .pipe(reload({stream: true}))
     .pipe(size({
       title: "CSS final:",
       gzip: true,
       showFiles: true,
       pretty: true
-    }))
-    .pipe(reload({stream: true}));
+    }));
 });
 
 

@@ -1,0 +1,43 @@
+.resume {
+
+  background: white;
+  padding: 2rem;
+
+  .panel__content {
+    max-width: 1000px;
+  }
+
+  @include media(tablet-portrait-up) {
+    padding: 4rem;
+  }
+
+  h4 {
+    color: $highlight;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    font-weight: normal;
+    @include fluid-type($min-width, $max-width, 15px, 22px);
+    margin: 0;
+  }
+
+  p {
+    @include fluid-type($min-width, $max-width, 16px, 24px);
+  }
+
+  .headline {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  &__head {
+    text-align: center;
+    color: $highlight;
+
+    a {
+      color: $highlight;
+      text-decoration: none;
+    }
+  }
+}

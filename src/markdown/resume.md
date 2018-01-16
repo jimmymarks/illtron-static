@@ -5,10 +5,6 @@ metadesc: This is my very exciting resume.
 layout: resume.njk
 ---
 
-<div class="resume__head">
-  9508 Evergreen Street, Silver Spring, MD 20901  
-  (814) 880-9416 • [cxc510@gmail.com](mailto:cxc510@gmail.com)
-</div>
 
 ### Tech + UX
 

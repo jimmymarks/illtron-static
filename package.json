@@ -1,7 +1,7 @@
 {
-  "name": "spj",
+  "name": "illtron-static",
   "version": "1.1.0",
-  "description": "Temporary static site for Science Partner Journals program",
+  "description": "Chris Coleman's web site.",
   "main": "index.js",
   "author": "Chris Coleman",
   "license": "",
