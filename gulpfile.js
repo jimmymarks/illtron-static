@@ -82,16 +82,9 @@ gulp.task('gzip', ['images', 'styles', 'js', 'favicons', 'render-pages', 'clean'
 });
 
 
-gulp.task('gh-pages', ['images', 'styles', 'js', 'favicons', 'render-pages', 'clean'], () =>{
+gulp.task('gh-pages', ['images', 'styles', 'js', 'favicons', 'render-pages'], () =>{
   return gulp.src(files.src.compiled)
-    .pipe(size({
-      title: "Gzip :",
-      gzip: true,
-      showFiles: true,
-      pretty: true
-    }))
     .pipe(gulp.dest(files.dist.docs))
-    .pipe(gzip())
 });
 
 
