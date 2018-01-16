@@ -39,7 +39,7 @@ const files = {
   },
   "dist": {
     "zipped" : 'compiled',
-    "ghpages" : 'docs',
+    "docs" : 'docs',
     "html": 'dist',
     "styles": 'dist/css',
     "images": 'dist/img',
@@ -79,7 +79,19 @@ gulp.task('gzip', ['images', 'styles', 'js', 'favicons', 'render-pages', 'clean'
     .pipe(gulp.dest(files.dist.zipped))
     .pipe(gzip())
     .pipe(gulp.dest(files.dist.zipped))
-    .pipe(gulp.dest(files.dist.ghpages))
+});
+
+
+gulp.task('gh-pages', ['images', 'styles', 'js', 'favicons', 'render-pages', 'clean'], () =>{
+  return gulp.src(files.src.compiled)
+    .pipe(size({
+      title: "Gzip :",
+      gzip: true,
+      showFiles: true,
+      pretty: true
+    }))
+    .pipe(gulp.dest(files.dist.docs))
+    .pipe(gzip())
 });
 
 
