@@ -36,9 +36,10 @@
     a {
       text-decoration: none;
       color: $linked;
-      transition: $transition-1;
+
 
       &:hover {
+        transition: $transition-1;
         color: $highlight;
         border-bottom: 4px solid $linked;
       }
@@ -49,13 +50,13 @@
       padding: 0;
       line-height: 1;
       font-size: 1.4em;
-      transition: background 2s linear;
       background: $colorful-gradient;
       border: 1px solid $darkness;
       border-top: 0;
 
       &:hover {
         border-color: transparent;
+        transition: $transition-1;
       }
 
       a {
@@ -63,11 +64,11 @@
         display: block;
         padding: .7em;
         background: $darkness;
-        transition: $transition-1;
 
         &:hover {
           border-bottom: none;
           background: transparent;
+          transition: $transition-1;
         }
       }
     }

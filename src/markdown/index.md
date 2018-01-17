@@ -1,6 +1,6 @@
 ---
 title: Chris Coleman
 headline: Hey.
-meta: Have a look around.
+metadesc: This is my web site.
 layout: home.njk
 ---

@@ -82,12 +82,6 @@ gulp.task('gzip', ['images', 'styles', 'js', 'favicons', 'render-pages', 'clean'
 });
 
 
-gulp.task('gh-pages', ['images', 'styles', 'js', 'favicons', 'render-pages'], () =>{
-  return gulp.src(files.src.compiled)
-    .pipe(gulp.dest(files.dist.docs))
-});
-
-
 gulp.task('serve', ['images', 'styles', 'js', 'favicons', 'render-pages'], () => {
   browserSync.init({
     server: "./dist"

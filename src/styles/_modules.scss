@@ -68,7 +68,6 @@
 a {
   color: $highlight;
   font-weight: bold;
-  transition: $transition-1;
   &:hover {
     color: $linked;
   }
@@ -78,6 +77,18 @@ a {
 .pronunciation {
   color: $gray-50;
   font-weight: normal;
-  @include fluid-type($min-width, $max-width, 22px, 48px);
-  @include ffo-swap($font-body);
+  font-family: American Typewriter, monospace;
+  @include fluid-type($min-width, $max-width, 22px, 38px);
+
+  @include media(phone-only) {
+    display: block;
+    line-height: 1.4;
+  }
+}
+
+
+.primary {
+  a {
+    transition: $transition-1;
+  }
 }

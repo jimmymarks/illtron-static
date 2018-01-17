@@ -1,6 +1,6 @@
 ---
 title: Colophon | Chris Coleman
-headline: Colophon <span class="pronunciation">| ˈkäləfən, ˈkäləˌfän |</span>
+headline: Colophon <span class="pronunciation">ˈkäləfən, ˈkäləˌfän</span>
 metadesc: About this site
 layout: page.njk
 ---
@@ -9,6 +9,7 @@ layout: page.njk
 
 1. An inscription at the end of a book or manuscript usually with facts about its production
 2. An identifying mark used by a printer or a publisher
+3. This page
 
 I just wanted to tell you a little bit about this site.
 
