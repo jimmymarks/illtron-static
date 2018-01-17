@@ -1,71 +1,114 @@
 .work {
-
-  background: white;
-
-
   p {
-    @include fluid-type($min-width, $max-width, 12px, 20px);
-  }
+    @include fluid-type($min-width, $max-width, 14px, 20px);
 
-  .materials {
+    &.materials {
       color: #666;
       text-align: right;
-      @include fluid-type($min-width, $max-width, 12px, 18px);
+      @include fluid-type($min-width, $max-width, 12px, 16px);
+    }
   }
 }
 
-.figure,
-.figure__container {
-  max-width: 100%;
-  border-bottom: $border-hairline;
-}
 
-.figure + .figure__container figure {
-  margin-top: 0 !important;
-}
-
-.figure__container,
-.figure--split,
-.image-group {
-  display: grid;
-  grid-gap: 100px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "caption image";
-}
 
 .figure {
-  padding-bottom: 5em;
-  margin: 5em auto;
-
-  img {
-    border: $border-hairline;
-  }
+  max-width: 100%;
+  border-bottom: $border-hairline;
+  margin-top: 0;
+  padding-bottom: 2em;
+  margin: 2em auto;
 
   @include media(tablet-portrait-up) {
-    @include gridsupport {
+    padding-bottom: 5em;
+    margin: 5em auto;
 
-      .image-group {
-      }
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  @include gridsupport {
+
+    @include media(bigger-phones-up) {
+
+      grid-gap: 2rem;
 
       &--split {
+        grid-template-areas: "caption image";
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+
         img {
           grid-area: image;
         }
 
         figcaption {
           grid-area: caption;
-
-          p {
-            &:first-child {
-              margin-top: 0;
-            }
-          }
         }
       }
+
+      .image-group {
+        display: grid;
+        grid-gap: inherit;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @include media(tablet-portrait-up) {
+      grid-gap: 100px;
     }
   }
 
+  img {
+    border: $border-hairline;
+    margin-bottom: 1em;
+
+    @include media(phone-only) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+
   figcaption {
+    position: relative;
+
+    p {
+      position: relative;
+      padding-left: 2rem;
+
+      @include media(bigger-phones-up) {
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      & + p:not(.materials) {
+      }
+
+      &:before {
+        width: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: "";
+      }
+
+      &:not(.materials):before {
+        height:  calc(100% + 1em);
+        background: $colorful-gradient-2;
+      }
+
+      &:first-child:before {
+        height: 100%;
+      }
+    }
   }
 
   img {

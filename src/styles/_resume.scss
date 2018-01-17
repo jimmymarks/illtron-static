@@ -1,8 +1,5 @@
 .resume {
 
-  background: white;
-  padding: 2rem;
-
   .panel__content {
     max-width: 1000px;
   }
@@ -33,11 +30,14 @@
 
   &__head {
     text-align: center;
-    color: $highlight;
+    font-weight: bold;
 
     a {
       color: $highlight;
       text-decoration: none;
+      &:hover {
+        color: $linked;
+      }
     }
   }
 }

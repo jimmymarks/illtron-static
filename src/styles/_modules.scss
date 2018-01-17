@@ -1,7 +1,6 @@
-
 .hey {
   @include ffo-swap($font-headline);
-  @include fluid-type($min-width, $max-width, 48px, 180px);
+  @include fluid-type($min-width, $max-width, 44px, 200px);
   color: white;
   font-weight: normal;
   text-rendering: optimizeLegibility;
@@ -25,7 +24,8 @@
   }
 }
 
-.panel--hey {
+.panel--intro {
+  @include fluid-type($min-width, $max-width, 18px, 44px);
   @include gridsupport{
     display: grid;
 
@@ -35,40 +35,6 @@
   }
 }
 
-.panel--process {
-  // background: $darkness;
-  background: linear-gradient(90deg, #EB9532 0,#ff624d);
-  color: white;;
-  position: relative;
-  padding: 2rem;
-
-  @include media(tablet-portrait-up) {
-    align-items: center;
-    padding: 6rem;
-  }
-
-  &:before {
-    pointer-events: none;
-    border: 4px solid white;
-    position: absolute;
-    content: "";
-    top: 1rem;
-    right: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-
-    @include media(tablet-portrait-up) {
-      top: 3rem;
-      right: 3rem;
-      bottom: 3rem;
-      left: 3rem;
-    }
-  }
-}
-
-.primary__intro {
-  @include fluid-type($min-width, $max-width, 22px, 44px);
-}
 
 .primary__intro--buttons {
   @include fluid-type($min-width, $max-width, 22px, 44px);
@@ -90,11 +56,28 @@
     &:hover {
       color: $white;
       border-color: $gray-20;
-      background: linear-gradient(90deg, #EB9532 0,#ff624d);
+      background: $colorful-gradient;
     }
 
     @include media(tablet-portrait-up) {
       display: inline-block;
     }
   }
+}
+
+a {
+  color: $highlight;
+  font-weight: bold;
+  transition: $transition-1;
+  &:hover {
+    color: $linked;
+  }
+}
+
+
+.pronunciation {
+  color: $gray-50;
+  font-weight: normal;
+  @include fluid-type($min-width, $max-width, 22px, 48px);
+  @include ffo-swap($font-body);
 }

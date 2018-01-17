@@ -5,6 +5,7 @@ metadesc: This is my very exciting resume.
 layout: resume.njk
 ---
 
+<div class="resume__head">[cxc510@gmail.com](mailto:cxc510@gmail.com)</div>
 
 ### Tech + UX
 

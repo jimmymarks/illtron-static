@@ -2,7 +2,13 @@
   position: fixed;
   width: 100%;
   background: rgba(white, .9);
+  padding: 0 2rem 0 0;
+  z-index: 1;
   @include fluid-type($min-width, $max-width, 12px, 22px);
+
+  @include media(desktop-up) {
+    padding-left: 2rem;
+  }
 
   font-weight: bold;
 
@@ -12,23 +18,58 @@
     padding: 0;
     list-style: none;
     max-width: 1280px;
+
+    @include media(1280px) {
+      padding-left: .75em !important;
+      background: red;
+    }
   }
 
   li {
-    padding: 1em .5em 1em 0;
-
-    &:not(:first-child) {
-      padding: 1em .5em;
-    }
     margin: 0;
-  }
+    padding: 1em .5em;
 
-  a {
-    text-decoration: none;
-    color: $linked;
-    &:hover {
-      color: $highlight;
-      border-bottom: 4px solid $linked;
+    &:nth-child(2) {
+      padding-left: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: $linked;
+      transition: $transition-1;
+
+      &:hover {
+        color: $highlight;
+        border-bottom: 4px solid $linked;
+      }
+    }
+
+    &.home {
+      @include ffo-swap($font-headline);
+      padding: 0;
+      line-height: 1;
+      font-size: 1.4em;
+      transition: background 2s linear;
+      background: $colorful-gradient;
+      border: 1px solid $darkness;
+      border-top: 0;
+
+      &:hover {
+        border-color: transparent;
+      }
+
+      a {
+        color: white;
+        display: block;
+        padding: .7em;
+        background: $darkness;
+        transition: $transition-1;
+
+        &:hover {
+          border-bottom: none;
+          background: transparent;
+        }
+      }
     }
   }
 }

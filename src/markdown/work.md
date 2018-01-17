@@ -36,7 +36,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
 
     <p>This quick sketch gets to the heart of what I knew we’d need to deliver: A search field, advanced search options, search results, and refinement options.</p>
 
-    <p class="materials">Materials used: Marker and paper</p>
+    <p class="materials">Tools used: Marker and paper</p>
   </figcaption>
 </figure>
 
@@ -54,8 +54,8 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
   alt="Search Revision 2">
 
   <figcaption>
-    <p><b>The third revision</b> takes specific field options into account and fleshes out the layout of the form. We experiment with a two-column layout instead of three, a top-left to bottom-right flow with the results appearing below the advanced form.</p>
-    <p class="materials">Materials used: Marker and paper</p>
+    <p><b>The second revision</b> takes specific field options into account and fleshes out the layout of the form. We experiment with a two-column layout instead of three, a top-left to bottom-right flow with the results appearing below the advanced form.</p>
+    <p class="materials">Tools used: Marker and paper</p>
   </figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
 
   <figcaption>
     <p>Around this time, I also started to explore the more complicated form elements. <i>Science</i>’s content archive dates back to 1880, and a simple, yet powerful, date picker is essential to searching a range of dates. </p>
-    <p class="materials">Materials used: Marker and paper</p>
+    <p class="materials">Tools used: Marker and paper</p>
   </figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
 
   <figcaption>
     <p><b>The third revision</b> builds on the second, focusing on the functionality of the fields and takes the existing layout of the site further into account. Additional detail in the margins uses information taken from discovery and requirements documentation. We’ve validated our basic concept and refined to the point where markers and paper won’t be of much more help. Time to commit this to the screen…</p>
-    <p class="materials">Materials used: Marker and paper</p>
+    <p class="materials">Tools used: Marker and paper</p>
   </figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
     <p><b>The fourth revision</b> takes the concepts from the third and fourth revisions, and moves them to a Sketch wireframe. The fields are further refined, and the entire work begins to take on more of the look of the actual site design.</p>
 
     <p>It was always going to be difficult to get all of the essential elements and functionality enough visibility to allow for discoverability, so I gave the three-column layout from the second revision another try.</p>
-    <p class="materials">Materials used: Sketch</p>
+    <p class="materials">Tools used: Sketch</p>
   </figcaption>
 </figure>
 
@@ -151,7 +151,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
     <p><b>The final revision</b> shows the form in both default and complete states. As the user performs a search, the facets appear inline below the fields they relate to. Time constraints dictated that we needed to begin development at this point. After a round of validation with internal users with a simple prototype (not shown, sorry), we were ready to start front-end integration.</p>
 
     <p><b>So what's next?</b> Time constraints dictated by the sunsetting of Google Custom Search and the need to keep pace with the back-end engineering necessitated a light touch when it came to up-front research. A impending initial release means we can now begin a second phase, with a baseline experience in place. Now we begin learning from what we have and plan for future iterations…</p>
-    <p class="materials">Materials used: Sketch</p>
+    <p class="materials">Tools used: Sketch</p>
     </figcaption>
 
 

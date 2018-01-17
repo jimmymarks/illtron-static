@@ -1,6 +1,6 @@
 .site-footer {
   max-width: 1280px;
-  padding: 1rem;
+  padding: 2rem;
   text-align: right;
   margin: 0 auto;
 
@@ -11,12 +11,7 @@
 
 .panel {
   min-height: 100vh;
-  // background: $gray-20;
-  padding: 1rem;
-
-  @include media(tablet-portrait-up) {
-    padding: 2rem;
-  }
+  padding: 3rem 2rem 2rem 2rem;
 
   @include gridsupport{
     display: grid;

@@ -1,7 +1,8 @@
 $phone-upper-boundary: 600px;
+$bigger-phone-upper-boundary: 736px;
 $tablet-portrait-upper-boundary: 900px;
 $tablet-landscape-upper-boundary: 1200px;
-$desktop-upper-boundary: 1800px;
+$desktop-upper-boundary: 1280px;
 
 $min-width: 320px;
 $max-width: 1280px;
@@ -28,6 +29,11 @@ $white:      #fff;
 $highlight:  #eb9532;
 $linked:     #6c7a89;
 $darkness:   #22313f;
+
+$colorful-gradient: linear-gradient(to bottom right, #EB9532,#ff624d);
+$colorful-gradient-2: linear-gradient(to right, #EB9532 0,#ff624d);
+
+$transition-1: .2s all linear;
 
 $border-hairline: 1px solid $gray-20;
 $border-medium: 2px solid $gray-20;
