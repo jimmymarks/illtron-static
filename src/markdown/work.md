@@ -13,6 +13,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
 
 **The problem:** *Science*’s existing search is built on Google’s Custom Search product, which is being phased out at the end of March 2018. A completely new back-end is being constructed in-house, and a new front-end was needed to complement the new features and solve problems with the existing search that we learned about through user feedback.
 
+
 **The solution:** The audience for this product is very well defined: scientific researchers of all career stages. We need to connect them with the research content they rely on to stay informed and do their jobs.
 
 <figure class="figure figure--split">
