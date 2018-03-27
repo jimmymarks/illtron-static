@@ -11,10 +11,10 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
 
 ## Case study: *Science* search
 
-**The problem:** *Science*’s existing search is built on Google’s Custom Search product, which is being phased out at the end of March 2018. A completely new back-end is being constructed in-house, and a new front-end was needed to complement the new features and solve problems with the existing search that we learned about through user feedback.
+**The problem:** *Science*’s cross-site search was built on Google’s Custom Search product, which was phased out in March 2018. A completely new back-end was constructed in-house, and a new front-end was needed to complement the new functionality and solve problems with the existing search that we learned about through user feedback.
 
+**The solution:** We explored several options including a SaaS search platform and even just not having a search functionality. before deciding on an approach. The audience for this product is very well defined: scientific researchers of all career stages. We need to connect them with the research content they rely on to stay informed and do their jobs.
 
-**The solution:** The audience for this product is very well defined: scientific researchers of all career stages. We need to connect them with the research content they rely on to stay informed and do their jobs.
 
 <figure class="figure figure--split">
   <img
@@ -114,7 +114,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
   <figcaption>
     <p><b>The fourth revision</b> takes the concepts from the third and fourth revisions, and moves them to a Sketch wireframe. The fields are further refined, and the entire work begins to take on more of the look of the actual site design.</p>
 
-    <p>It was always going to be difficult to get all of the essential elements and functionality enough visibility to allow for discoverability, so I gave the three-column layout from the second revision another try.</p>
+    <p>It was always going to be difficult to get all of the essential elements and functionality enough visibility to allow for discoverability, so we gave the three-column layout from the second revision another try.</p>
     <p class="materials">Tools used: Sketch</p>
   </figcaption>
 </figure>
@@ -123,7 +123,7 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
 
 
 
-  <figure class="figure">
+<figure class="figure">
 
     <div class="image-group">
 
@@ -149,12 +149,37 @@ Starting with some very recent work (still in-progress, to be precise) I hope to
     </div>
 
     <figcaption>
-    <p><b>The final revision</b> shows the form in both default and complete states. As the user performs a search, the facets appear inline below the fields they relate to. Time constraints dictated that we needed to begin development at this point. After a round of validation with internal users with a simple prototype (not shown, sorry), we were ready to start front-end integration.</p>
+    <p><b>The final design revision</b> shows the form in both default and complete states. As the user performs a search, the facets appear inline below the fields they relate to. Time constraints dictated that we needed to begin development at this point. After a round of validation with internal users with a simple prototype (not shown, sorry), we were ready to start front-end integration.</p>
 
     <p><b>So what's next?</b> Time constraints dictated by the sunsetting of Google Custom Search and the need to keep pace with the back-end engineering necessitated a light touch when it came to up-front research. A impending initial release means we can now begin a second phase, with a baseline experience in place. Now we begin learning from what we have and plan for future iterations…</p>
     <p class="materials">Tools used: Sketch</p>
-    </figcaption>
+  </figcaption>
+</figure>
 
+<figure class="figure figure--split">
+  <img
+sizes="(max-width: 1380px) 100vw, 1380px"
+srcset="
+/img/search-final_eblglx_c_scale,w_310.jpg 310w,
+/img/search-final_eblglx_c_scale,w_675.jpg 675w,
+/img/search-final_eblglx_c_scale,w_950.jpg 950w,
+/img/search-final_eblglx_c_scale,w_1181.jpg 1181w,
+/img/search-final_eblglx_c_scale,w_1380.jpg 1380w"
+src="/img/search-final_eblglx_c_scale,w_1380.jpg"
+alt="">
 
+  <figcaption>
+    <p><b>The first release</b> launched with many of the planned features. We decided to hold back on a few features, however, and start collecting data and direct user feedback to learn what was really necessary. The initial goal was to put high quality results in front of the user as quickly as possibly, and in this the launch was very successful.
+    </p>
 
-    </figure>
+    <p>We've been collecting a good amount of direct feedback and behavioral data since the launch, and we've learned a few things. The most striking issue was that while performance is excellent in the United States, we've received a substantial amount of feedback indicating real problems in China. It's on the agenda to track down in the near future.</p>
+
+    <p>The date picker also turned out to have some real accessibility challenges associated with it. We know from conversations with some of our vision-impaired users that this is a common problem. We hope to fix it by relying on the new HTML5 datepicker input.
+    </p>
+
+    <p>Finally, we found that we need more options around author names. In our testing, we found that a facet might not be helpful since, with 140 years of content, there are hundreds of thousands of names, and a facet could only reasonably show a few. We're exploring the problem, but it's looking likely that we'll need to add a field to search first names and initials. It's a tricky problem that we can't solve entirely on the user end. Even many well-known authors have been inconsistently named in our records over the years.
+    </p>
+
+    <p>For now, the work goes on.</p>
+  </figcaption>
+</figure>

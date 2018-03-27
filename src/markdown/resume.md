@@ -7,23 +7,27 @@ layout: resume.njk
 
 <div class="resume__head">[cxc510@gmail.com](mailto:cxc510@gmail.com)</div>
 
-### Tech + UX
+### Technology and Product Leadership
 
-Dedicated defender of the user with proven know-how to combine research, technology, and design to shape a world-class digital experience.
+Dedicated user advocate and technologist with proven experience to combine technology, data, research, and design to shape engaging digital products.
 
 ### Professional Experience
 
-#### Tech Manager
+#### Tech Manager, Web Technologies
 
 ##### *Science* Magazine (American Association for the Advancement of Science)
-##### Washington, DC
-##### Aug. 2015–Present
+##### Washington, DC• Aug. 2015–Present
 
-Led the modernization and re-platforming of the company’s flagship websites, resulting in a 30% year-over-year increase in traffic and user engagement. Fostered a new data-driven approach to solving customer needs, rather than stakeholder-driven. This family of sites now serves nearly a quarter-billion page views per year and growing.
-
-Coordinated cross-functional stakeholders from senior management to design and engineering. Supervised and mentored a staff of four, responsible for user experience, information architecture, content, back-end, and front-end development. Facilitated each phase of the product life cycle, from research to release. My efforts helped *Science* magazine extend its award-winning print experience to web properties as part of a five-year digital transformation.
-
-My responsibilities include shared oversight of the department budget of approximately $250,000, exclusive of staff. I lead vendor selection for additional content, design, web, and infrastructure projects, and coordinate with closely with the project and portfolio team to ensure work is delivered on time and within budget.
+* Manage agile Scrum team responsible for user experience, information architecture, content strategy, API and web development
+* Lead Scrum reviews, retrospectives, and planning, and agile activities such as story mapping
+* Collaborate with stakeholders from news, research editorial, marketing, and advertising departments to align product roadmap with business outcomes
+* Identify and manage third-party vendors to supplement internal teams on content, design, web, and infrastructure projects
+* Coordinate user outreach and research to solicit feedback and drive future product and technology decisions
+* Led full product life cycle for modernization and re-platforming of the organization’s flagship digital properties, including ScienceMag.org, increasing key * engagement metrics by 30% year-over-year
+* Led strategy and development of advanced editorial features to improve storytelling tools and display of interactive content on Drupal, WordPress, and static sites
+* Led all phases of product development, from research to release, for new search platform, covering nearly 140 years of publishing
+* Front-end development to assist product team with overflow work
+* User experience design, including research, wireframes, prototypes, and journey maps
 
 #### Senior Developer
 
@@ -31,9 +35,13 @@ My responsibilities include shared oversight of the department budget of approxi
 ##### Washington, DC
 ##### Feb. 2013–Aug. 2015
 
-Using Atomic Design principles, established a living style guide and design system serving *Science*’s journal and magazine properties. This successful effort has led to culture of product and design not only within the company, but also among the company’s mission-critical partners and vendors.
-
-Shepherded an initiative to establish a user-first design culture, borrowing from both Lean and Design Thinking models, for iterating consumer products and technology, relying on both data and empathy for the customer to drive decisions. Led development, including Javascript, Sass/CSS, Node.js, PHP, Drupal, WordPress, and Pattern Lab.
+* Led strategy, research, development, and design for a large-scale redesign and re-platforming project of the company's primary web properties
+* Collaborated with stakeholders to understand business objectives and product ideas for redesign project
+* Hands-on product team leadership, transforming assumptions and requirements into validated user stories and development tasks
+* Using Pattern Lab and Atomic Design principles, established a living style guide/design system serving *Science*'s journal and magazine properties.
+* Led shift from waterfall to lean/agile processes
+* Established user-first design culture for iterating consumer products and technology, relying on both data and user empathy to drive decisions
+* Web design and development, including Javascript, Sass/CSS, Node.js, PHP, Drupal, WordPress, and Pattern Lab.
 
 #### Instructor, Front-End Web Development
 
@@ -41,7 +49,7 @@ Shepherded an initiative to establish a user-first design culture, borrowing fro
 ##### Washington, DC
 ##### Feb. 2015–May 2015
 
-Co-instructed class of approximately 25 adult learners in an overview of front-end web development, including HTML, CSS, Javascript, jQuery, and Sass. Refined company-provided curriculum to include best practices for front-end development and modern workflow tooling.
+Co-instructed class of approximately 25 adult learners in an overview of front-end web development, including HTML, CSS, Javascript, jQuery, and Sass.
 
 #### User Experience Prototyper
 
@@ -49,7 +57,7 @@ Co-instructed class of approximately 25 adult learners in an overview of front-e
 ##### Fairfax, VA
 ##### Jan. 2013–Feb. 2013  
 
-Designed and developed user experience prototypes for enterprise clients including Cisco Systems and Marriott. Worked with agency principals and client stakeholders on discovery and development process.
+Discovery, design, and development user experience prototypes for enterprise clients including Cisco Systems and Marriott.
 
 #### Senior Front-End Developer
 
@@ -57,7 +65,7 @@ Designed and developed user experience prototypes for enterprise clients includi
 ##### Washington, DC
 ##### Oct. 2011–Dec. 2012  
 
-Front-end development in a performance-focused, agile startup. Worked within a cross-functional team to build web and iOS products. Contributed to LivingSocial’s consumer-facing user interface library. Worked closely with designers on the company’s Live Events vertical and other consumer-facing areas and mobile web, email marketing, and iOS/Android app interfaces. Researched and implemented best practices for modern HTML email templates, resulting in improved experience across a wider variety of email clients.
+Front-end development in a performance-focused, agile startup. Worked within a cross-functional team to build web, mobile, and email products.
 
 #### Web Developer
 
@@ -65,7 +73,7 @@ Front-end development in a performance-focused, agile startup. Worked within a c
 ##### Washington, DC
 ##### Dec. 2010–Oct. 2011  
 
-Front-end web development, iOS and Android application design. Developed new avenues for content distribution, improved platform strategy, and began process of migrating legacy sites to modern platforms and technologies. Consulted on platform, web best practices, and hiring with Membership and Marketing departments.
+Front-end web development; iOS and Android application design.
 
 #### Senior Production Specialist
 
@@ -73,7 +81,7 @@ Front-end web development, iOS and Android application design. Developed new ave
 ##### Washington, DC
 ##### Feb. 2008–Dec. 2010  
 
-Content production and management, web design and development for scientific audiences. Produced XML research content for publication and distribution. Configured and developed on Movable Type Enterprise, eZ Publish, and Mark Logic CMS platforms.
+Content production and management, web design and development for scientific audiences.
 
 #### Operations Manager
 
@@ -81,7 +89,7 @@ Content production and management, web design and development for scientific aud
 ##### Jersey City, NJ
 ##### July 2007–Feb. 2008
 
-Reported to General Manager/CEO and ensured seamless business operations in support advertising, recruitment, and other sales departments. Supervised operations department staff, including designers and coordinators. Coordinated workflows between operations, editorial, and publishing departments.
+Ensured seamless business operations in support of advertising, recruitment, and other sales departments. Supervised operations department staff, including designers and coordinators. Coordinated workflows between operations, editorial, and publishing departments.
 
 #### Web Producer
 
@@ -89,7 +97,7 @@ Reported to General Manager/CEO and ensured seamless business operations in supp
 ##### Jersey City, NJ
 ##### June 2006–July 2007
 
-Developed advertising products for sales staff, managed ad traffic, and designed web advertisements. Designed and developed static landing sites for clients in support of web and print campaigns.
+Developed advertising products for sales staff, managed ad traffic, and designed web advertisements. Designed and developed sites for clients in support of web/print campaigns.
 
 #### News Producer
 
@@ -97,7 +105,7 @@ Developed advertising products for sales staff, managed ad traffic, and designed
 ##### Jersey City, NJ
 ##### Dec. 2005–June 2006
 
-Produced daily online news for New Jersey and New York newspapers, including Newark *Star-Ledger*, *Jersey Journal* and Staten Island *Advance*. News section and homepage design, content management, creation, and curation.
+Produced daily online news for New Jersey and New York newspapers, including Newark Star-Ledger, Jersey Journal and Staten Island Advance.
 
 #### News Producer
 
@@ -105,9 +113,12 @@ Produced daily online news for New Jersey and New York newspapers, including New
 ##### Harrisburg, PA
 ##### Sept. 2003–Dec. 2005  
 
-Daily online news production for Pennsylvania newspapers, including the Harrisburg *Patriot-News*. Developed and curated new content sections for local news audience. Modernized legacy web templates using CSS and web standards.
+Daily news production for Pennsylvania newspapers, including the Harrisburg Patriot-News.
 
 #### Education
 
-##### Penn State University, 2002  
-##### Bachelor of Arts, Journalism
+##### Penn State University, 2002
+
+Bachelor of Arts, Journalism, College of Communications
+Minor, German, College of Liberal Arts
+August 2002
